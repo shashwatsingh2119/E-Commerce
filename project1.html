@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase — Online Store</title>
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Fashion Store</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+</head>
+
+<body>
+  
+  <header>
+    <h1><a href="#">ShopEase</a></h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cart">Cart <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="hero">
+    <h2>Discover Your Next Favorite</h2>
+    <p>Trendy apparel, accessories, and more—delivered to your door.</p>
+    <a href="#products">Shop Now</a>
+  </section>
+
+  
+  <section id="products">
+    <h2>Featured Products</h2>
+
+    <article>
+      <img src="https://source.unsplash.com/400x500/?tshirt" alt="Graphic T‑Shirt">
+      <h3>Graphic T‑Shirt</h3>
+      <p>₹499</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article>
+      <img src="https://source.unsplash.com/400x500/?jeans" alt="Slim‑Fit Jeans">
+      <h3>Slim‑Fit Jeans</h3>
+      <p>₹1 299</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article>
+      <img src="https://source.unsplash.com/400x500/?handbag" alt="Vegan Leather Handbag">
+      <h3>Vegan Leather Handbag</h3>
+      <p>₹1 899</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+
+    <article>
+      <img src="https://source.unsplash.com/400x500/?sneakers" alt="Air‑Lite Sneakers">
+      <h3>Air‑Lite Sneakers</h3>
+      <p>₹2 199</p>
+      <button class="add-to-cart">Add to Cart</button>
+    </article>
+  </section>
+
+ 
+  <section id="categories">
+    <h2>Shop by Category</h2>
+
+    <a href="#"><h3>Women</h3></a>
+    <a href="#"><h3>Men</h3></a>
+    <a href="#"><h3>Accessories</h3></a>
+    <a href="#"><h3>Footwear</h3></a>
+  </section>
+
+  
+  <section>
+    <h2>Why Shop With Us?</h2>
+
+    <div>
+      <h4>🚚 Free Shipping</h4>
+      <p>On all orders over ₹999.</p>
+    </div>
+    <div>
+      <h4>🔄 Easy Returns</h4>
+      <p>30‑day hassle‑free returns.</p>
+    </div>
+    <div>
+      <h4>🔐 Secure Payments</h4>
+      <p>100% safe &amp; encrypted.</p>
+    </div>
+    <div>
+      <h4>📞 24/7 Support</h4>
+      <p>We’re here to help.</p>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Stay in the Loop</h2>
+    <p>Join our newsletter for exclusive offers &amp; first‑look drops.</p>
+
+    <form action="#" method="post" aria-label="Newsletter">
+      <input type="email" name="email" placeholder="Your email address" required aria-label="Email address">
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  
+  <footer id="contact">
+    <div>
+      <h3>ShopEase</h3>
+      <p>&copy; 2025 ShopEase. All rights reserved.</p>
+    </div>
+
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#products">Shop</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="mailto:support@shopease.com">Email Us</a></li>
+      </ul>
+    </nav>
+
+    <div>
+      <a href="#" aria-label="Facebook">Facebook</a>
+      <a href="#" aria-label="Instagram">Instagram</a>
+      <a href="#" aria-label="Twitter">Twitter (X)</a>
+    </div>
+  </footer>
+
+  
+  <script>
+    /* Simple “Add to Cart” counter (demo only) */
+    document.querySelectorAll(".add-to-cart").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const count = document.getElementById("cart-count");
+        count.textContent = +count.textContent + 1;
+      });
+    });
+  </script>
+</body>
+</html>
